@@ -4,11 +4,11 @@
     private decimal assetValue;
     private decimal depricationRate;
 
-    public Asset(string assetName, decimal assetValue, decimal depticationRate)
+    public Asset(string assetsName, decimal assetsValue, decimal depticationsRate)
     {
-        AssetName = assetName;
-        AssetValue = assetValue;
-        DepricationRate = depricationRate;
+        AssetName = assetsName;
+        AssetValue = assetsValue;
+        DepricationRate = depticationsRate;
     }
 
     public string AssetName
@@ -40,13 +40,13 @@
     {
         get
         {
-            return DepricationRate;
+            return depricationRate;
         }
         set
         {
             if (value > 0.0m)
             {
-                DepricationRate = value;
+                depricationRate = value;
             }
         }
     }
