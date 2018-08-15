@@ -49,7 +49,7 @@
         {
             if (value > 0.0m)
             {
-                if (value < 50m)
+                if (value < 51m)
                 {
                     math = value;
                 }
@@ -67,7 +67,7 @@
         {
             if (value > 0.0m)
             {
-                if (value < 50m)
+                if (value < 51m)
                 {
                     english = value;
                 }
@@ -85,7 +85,7 @@
         {
             if (value > 0.0m)
             {
-                if (value < 50m)
+                if (value < 51m)
                 {
                     biology = value;
                 }
@@ -101,7 +101,7 @@
 
     public decimal GetPercentage(decimal math, decimal english, decimal biology)
     {
-        decimal Percentage = GetAggregate(math, english, biology) / 50 * 100;
+        decimal Percentage = (GetAggregate(math, english, biology) / 50) * 100;
         return Percentage;
     }
 }

@@ -36,6 +36,8 @@ class StudentRecordTest
         Console.Write($"Student1's aggregated score is: {student1.GetAggregate(student1.Math, student1.English, student1.Biology)}");
         Console.Write($"\nStudent1's score percentage is: {student1.GetPercentage(student1.Math, student1.English, student1.Biology)}");
 
+        Console.Write($"\n\nStudent2's aggregated score is: {student2.GetAggregate(student2.Math, student2.English, student2.Biology)}");
+        Console.Write($"\nStudent2's score percentage is: {student2.GetPercentage(student2.Math, student2.English, student2.Biology)}");
         Console.ReadLine();
     }
 }
