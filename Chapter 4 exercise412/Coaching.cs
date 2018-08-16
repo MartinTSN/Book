@@ -61,6 +61,7 @@
 
     public string DisplayDetails()
     {
-        return $"{CoachingType} \t {Players} \t {ClassTimings} \t {Charges}";
+        return $"CoachingType: \t Players: \t ClassTimings: \t Charges: " +
+            $"\n{CoachingType} \t\t {Players} \t\t {ClassTimings} \t\t {Charges:C}";
     }
 }
