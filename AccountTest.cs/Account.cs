@@ -39,5 +39,10 @@
             balance = balance - withdrawAmount;
         }
     }
+
+    public static string DisplayAccount(Account accountToDisplay)
+    {
+        return $"{accountToDisplay.Name}'s Balance: {accountToDisplay.Balance:C}";
+    }
 }
 
